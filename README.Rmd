@@ -29,6 +29,6 @@ Further updates to this package will include the remaining palettes displayed on
 README <- TRUE
 ```
 
-```{r readme, child = "vignettes/ggmccalllab.Rmd", out.dir = here::here("figures")}
+```{r readme, child = "vignettes/ggmccalllab.Rmd"}
 ```
 

@@ -22,8 +22,8 @@
 #' @export
 
 theme_mccall_lab <- function(
-  text_size = 13,
-  title_size = 15,
+  text_size = 11,
+  title_size = 14,
   text_color = "black",
   panel_grid_linetype = "18",
   base_theme = ggplot2::theme_linedraw()
