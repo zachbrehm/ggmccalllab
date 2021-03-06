@@ -1,0 +1,23 @@
+Package: ggmccalllab
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.1
+Authors@R: person("Zachary", "Brehm", 
+    email = "zachary_brehm@urmc.rochester.edu", role = c("aut", "cre"))
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: 
+    ggplot2,
+    scales
+Imports:
+    ggplot2,
+    scales
+Suggests: 
+    knitr,
+    rmarkdown,
+    palmerpenguins
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1

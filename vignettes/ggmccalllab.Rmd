@@ -1,0 +1,40 @@
+---
+title: "ggmccalllab"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{ggmccalllab}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(ggmccalllab)
+library(palmerpenguins)
+```
+
+```{r}
+ggplot(
+  penguins,
+  aes(x = bill_length_mm, y = bill_depth_mm, color = species, group = species)
+) +
+  geom_point(
+    shape = 19
+    ) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_color_mccall_lab() +
+  labs(
+    title = "Penguin bill dimensions",
+    subtitle = "Bill length and depth for Adelie, Chinstrap, and Gentoo Penguins at Palmer Station LTER",
+    x = "Bill length (mm)",
+    y = "Bill depth (mm)",
+    color = "Species"
+  ) + 
+  theme_mccall_lab()
+```
