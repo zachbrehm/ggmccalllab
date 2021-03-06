@@ -32,6 +32,12 @@ library(ggmccalllab)
 library(palmerpenguins)
 ```
 
+## Example plot
+
+As an example, we recreate the **Bill length vs. depth** example from
+the `palmerpenguins` article:
+<https://allisonhorst.github.io/palmerpenguins/articles/examples.html>
+
 ``` r
 ggplot(
   penguins,
