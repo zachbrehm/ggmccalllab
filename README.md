@@ -32,10 +32,12 @@ library(ggmccalllab)
 library(palmerpenguins)
 ```
 
-## Example plot
+## Example plots
 
-As an example, we recreate the **Bill length vs. depth** example from
-the `palmerpenguins` article:
+![](man/figures/gg_tsne.png)<!-- -->
+
+As another example, we recreate the **Bill length vs. depth** example
+from the `palmerpenguins` article:
 <https://allisonhorst.github.io/palmerpenguins/articles/examples.html>
 
 ``` r
@@ -50,15 +52,13 @@ ggplot(
   scale_color_mccall_lab() +
   labs(
     title = "Penguin bill dimensions",
-    subtitle = "Bill length and depth for Adelie, Chinstrap, and Gentoo Penguins at Palmer Station LTER",
+    subtitle = "Bill length and depth for Adelie, Chinstrap, 
+                and Gentoo Penguins at Palmer Station LTER",
     x = "Bill length (mm)",
     y = "Bill depth (mm)",
     color = "Species"
   ) + 
   theme_mccall_lab()
-#> `geom_smooth()` using formula 'y ~ x'
-#> Warning: Removed 2 rows containing non-finite values (stat_smooth).
-#> Warning: Removed 2 rows containing missing values (geom_point).
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![](man/figures/penguins.png)<!-- -->
