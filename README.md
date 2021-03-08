@@ -19,7 +19,7 @@ University of Rochester. The palettes in this package are all intended
 to be color blindy friendly.
 
 Supports color palettes with 8, 12, 15, or 48 color options. These
-palettes were adapted by [Martin
+palettes were adapted from the designs by [Martin
 Krzywinski](http://mkweb.bcgsc.ca/colorblind/palettes.mhtml#page-container),
 of which the 8 color palette was adapted from [Points of view: Color
 Blindness](https://www.nature.com/articles/nmeth.1618) by Bang Wong.
