@@ -5,8 +5,8 @@
 \title{McCall Lab Theme}
 \usage{
 theme_mccall_lab(
-  text_size = 17,
-  title_size = 21,
+  text_size = 11,
+  title_size = 14,
   text_color = "black",
   panel_grid_linetype = "18",
   base_theme = ggplot2::theme_linedraw()
@@ -33,7 +33,7 @@ library(palmerpenguins)
 
 
 ggplot(penguins, aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +
-    scale_color_mccall_lab() +
+    scale_color_mccall_lab(palette = "martink8") +
     theme_mccall_lab()
 
 }

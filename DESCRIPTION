@@ -1,11 +1,11 @@
 Package: ggmccalllab
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.1
+Title: Colorblind friendly palettes
+Version: 0.1.2
 Authors@R: person("Zachary", "Brehm", 
     email = "zachary_brehm@urmc.rochester.edu", role = c("aut", "cre"))
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: Color palettes and theme for ggplot2. Implements color blind friendly
+             palettes designed by Martin Krzywinski.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

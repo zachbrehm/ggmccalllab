@@ -16,7 +16,7 @@
 #'
 #'
 #' ggplot(penguins, aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +
-#'     scale_color_mccall_lab() +
+#'     scale_color_mccall_lab(palette = "martink8") +
 #'     theme_mccall_lab()
 #'
 #' @export

@@ -23,8 +23,8 @@ library(palmerpenguins)
 
 ## Example plots
 
-An example of the palette and theme is shown here, applied to the cell-types
-data from https://github.com/zachbrehm/celltypes 
+An example of the 8 color palette and theme is shown here, applied to the cell-types
+data from https://github.com/zachbrehm/celltypes.
 
 ```r
 ggplot(tsneDf, aes(x = X, y = Y, color = Z, text = Project, alpha = 0.8)) + 
@@ -35,7 +35,8 @@ ggplot(tsneDf, aes(x = X, y = Y, color = Z, text = Project, alpha = 0.8)) +
        color = "Cell-Type",
        text = rse$study) + 
   guides(alpha = FALSE) + 
-  scale_color_mccall_lab(labels = c("Cardiac Muscle", 
+  scale_color_mccall_lab(palette = "martink8",
+                         labels = c("Cardiac Muscle", 
                                    "Endothelial", 
                                    "Erythrocyte", 
                                    "Adipocyte", 
@@ -48,7 +49,7 @@ ggplot(tsneDf, aes(x = X, y = Y, color = Z, text = Project, alpha = 0.8)) +
 
 `r knitr::include_graphics(paste0(fig_path, "gg_tsne.png"), error = FALSE)`
 
-As another example, we recreate the **Bill length vs. depth** example from the `palmerpenguins` article: https://allisonhorst.github.io/palmerpenguins/articles/examples.html
+As another example, this time using selections from the 12 color palette, we recreate the **Bill length vs. depth** example from the `palmerpenguins` article: https://allisonhorst.github.io/palmerpenguins/articles/examples.html
 
 ```r
 ggplot(
@@ -59,7 +60,7 @@ ggplot(
     shape = 19
     ) +
   geom_smooth(method = "lm", se = FALSE) +
-  scale_color_mccall_lab() +
+  scale_color_mccall_lab(palette = "martink12") +
   labs(
     title = "Penguin bill dimensions",
     subtitle = "Bill length and depth for Adelie, Chinstrap, 
