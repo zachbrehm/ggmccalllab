@@ -23,8 +23,6 @@ palettes were adapted by [Martin
 Krzywinski](http://mkweb.bcgsc.ca/colorblind/palettes.mhtml#page-container),
 of which the 8 color palette was adapted from [Points of view: Color
 Blindness](https://www.nature.com/articles/nmeth.1618) by Bang Wong.
-Further updates to this package will include the remaining palettes
-displayed on.
 
 ``` r
 library(ggmccalllab)
