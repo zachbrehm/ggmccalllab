@@ -16,13 +16,15 @@ This package is currently in development. This package is intended to
 provide an easily deployable color palette and theme for ggplot2 for use
 by students in the McCall Lab in the Department of Biostatistics at
 University of Rochester. The palettes in this package are all intended
-to be color blindy friendly.
+to be color blind friendly.
 
 Supports color palettes with 8, 12, 15, or 48 color options. These
-palettes were adapted from the designs by [Martin
+palettes were adapted by [Martin
 Krzywinski](http://mkweb.bcgsc.ca/colorblind/palettes.mhtml#page-container),
 of which the 8 color palette was adapted from [Points of view: Color
 Blindness](https://www.nature.com/articles/nmeth.1618) by Bang Wong.
+Further updates to this package will include the remaining palettes
+displayed on.
 
 ``` r
 library(ggmccalllab)
