@@ -1,7 +1,7 @@
-Package: ggmccalllab
+Package: ggmnmlab
 Type: Package
 Title: Colorblind friendly palettes
-Version: 0.1.2
+Version: 0.2.0
 Authors@R: person("Zachary", "Brehm", 
     email = "zachary_brehm@urmc.rochester.edu", role = c("aut", "cre"))
 Description: Color palettes and theme for ggplot2. Implements color blind friendly

@@ -9,7 +9,7 @@ output: github_document
 This package can be installed using devtools.
 
 ```r
-devtools::install_github("zachbrehm/ggmccalllab")
+devtools::install_github("zachbrehm/ggmnmlab")
 ```
 
 ## Introduction
@@ -27,6 +27,6 @@ Further updates to this package will include the remaining palettes displayed on
 README <- TRUE
 ```
 
-```{r readme, child = "vignettes/ggmccalllab.Rmd", out.dir = here::here("man", "figures")}
+```{r readme, child = "vignettes/ggmnmlab.Rmd", out.dir = here::here("man", "figures")}
 ```
 

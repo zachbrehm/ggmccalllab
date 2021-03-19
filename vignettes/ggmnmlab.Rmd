@@ -1,5 +1,5 @@
 ---
-title: "ggmccalllab"
+title: "ggmnmlab"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{ggmccalllab}
@@ -17,7 +17,7 @@ fig_path <- if (!(exists("README"))) "../man/figures/" else "man/figures/"
 
 
 ```{r setup}
-library(ggmccalllab)
+library(ggmnmlab)
 library(palmerpenguins)
 ```
 
@@ -35,7 +35,7 @@ ggplot(tsneDf, aes(x = X, y = Y, color = Z, text = Project, alpha = 0.8)) +
        color = "Cell-Type",
        text = rse$study) + 
   guides(alpha = FALSE) + 
-  scale_color_mccall_lab(palette = "martink8",
+  scale_color_mnmlab(palette = "martink8",
                          labels = c("Cardiac Muscle", 
                                    "Endothelial", 
                                    "Erythrocyte", 
@@ -44,7 +44,7 @@ ggplot(tsneDf, aes(x = X, y = Y, color = Z, text = Project, alpha = 0.8)) +
                                    "Macrophage", 
                                    "Smooth Muscle"),
                         ) +
-  theme_mccall_lab()
+  theme_mnmlab()
 ```
 
 `r knitr::include_graphics(paste0(fig_path, "gg_tsne.png"), error = FALSE)`
@@ -60,7 +60,7 @@ ggplot(
     shape = 19
     ) +
   geom_smooth(method = "lm", se = FALSE) +
-  scale_color_mccall_lab(palette = "martink12") +
+  scale_color_mnmlab(palette = "martink12") +
   labs(
     title = "Penguin bill dimensions",
     subtitle = "Bill length and depth for Adelie, Chinstrap, 
@@ -69,7 +69,7 @@ ggplot(
     y = "Bill depth (mm)",
     color = "Species"
   ) + 
-  theme_mccall_lab()
+  theme_mnmlab()
 ```
 
 `r knitr::include_graphics(paste0(fig_path, "penguins.png"), error = FALSE)`
