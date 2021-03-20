@@ -1,11 +1,11 @@
 Package: ggmnmlab
 Type: Package
 Title: Colorblind friendly palettes
-Version: 0.2.0
+Version: 0.2.1
 Authors@R: person("Zachary", "Brehm", 
     email = "zachary_brehm@urmc.rochester.edu", role = c("aut", "cre"))
 Description: Color palettes and theme for ggplot2. Implements color blind friendly
-             palettes designed by Martin Krzywinski.
+             palettes designed by Martin Krzywinski and Paul Tol.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

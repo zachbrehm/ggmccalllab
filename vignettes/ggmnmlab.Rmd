@@ -49,26 +49,22 @@ ggplot(tsneDf, aes(x = X, y = Y, color = Z, text = Project, alpha = 0.8)) +
 
 `r knitr::include_graphics(paste0(fig_path, "gg_tsne.png"), error = FALSE)`
 
-As another example, this time using selections from the 12 color palette, we recreate the **Bill length vs. depth** example from the `palmerpenguins` article: https://allisonhorst.github.io/palmerpenguins/articles/examples.html
+As another example, we recreate the **Bill length vs. depth** example from the `palmerpenguins` article, this time using the high contrast palette from Paul Tol: https://allisonhorst.github.io/palmerpenguins/articles/examples.html
 
 ```r
 ggplot(
   penguins,
-  aes(x = bill_length_mm, y = bill_depth_mm, color = species, group = species)
+  aes(x = bill_length_mm, y = bill_depth_mm, fill = species, group = species)
 ) +
   geom_point(
-    shape = 19
-    ) +
+    shape = 19, size = 2
+  ) +
   geom_smooth(method = "lm", se = FALSE) +
-  scale_color_mnmlab(palette = "martink12") +
+  scale_color_mnmlab(palette = "highContrast") +
   labs(
-    title = "Penguin bill dimensions",
-    subtitle = "Bill length and depth for Adelie, Chinstrap, 
-                and Gentoo Penguins at Palmer Station LTER",
-    x = "Bill length (mm)",
-    y = "Bill depth (mm)",
-    color = "Species"
-  ) + 
+    title = "Penguin bill dimensions at Palmer Station",
+    x = "Bill length (mm)", y = "Bill depth (mm)", color = "Species"
+  ) +
   theme_mnmlab()
 ```
 

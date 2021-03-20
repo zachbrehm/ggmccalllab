@@ -7,7 +7,7 @@ Zachary Brehm
 This package can be installed using devtools.
 
 ``` r
-devtools::install_github("zachbrehm/ggmccalllab")
+devtools::install_github("zachbrehm/ggmnmlab")
 ```
 
 ## Introduction
@@ -27,7 +27,7 @@ Further updates to this package will include the remaining palettes
 displayed on.
 
 ``` r
-library(ggmccalllab)
+library(ggmnmlab)
 #> Loading required package: ggplot2
 #> Loading required package: scales
 library(palmerpenguins)
@@ -47,7 +47,7 @@ ggplot(tsneDf, aes(x = X, y = Y, color = Z, text = Project, alpha = 0.8)) +
        color = "Cell-Type",
        text = rse$study) + 
   guides(alpha = FALSE) + 
-  scale_color_mccall_lab(palette = "martink8",
+  scale_color_mnmlab(palette = "martink8",
                          labels = c("Cardiac Muscle", 
                                    "Endothelial", 
                                    "Erythrocyte", 
@@ -56,35 +56,31 @@ ggplot(tsneDf, aes(x = X, y = Y, color = Z, text = Project, alpha = 0.8)) +
                                    "Macrophage", 
                                    "Smooth Muscle"),
                         ) +
-  theme_mccall_lab()
+  theme_mnmlab()
 ```
 
 ![](man/figures/gg_tsne.png)<!-- -->
 
-As another example, this time using selections from the 12 color
-palette, we recreate the **Bill length vs. depth** example from the
-`palmerpenguins` article:
+As another example, we recreate the **Bill length vs. depth** example
+from the `palmerpenguins` article, this time using the high contrast
+palette from Paul Tol:
 <https://allisonhorst.github.io/palmerpenguins/articles/examples.html>
 
 ``` r
 ggplot(
   penguins,
-  aes(x = bill_length_mm, y = bill_depth_mm, color = species, group = species)
+  aes(x = bill_length_mm, y = bill_depth_mm, fill = species, group = species)
 ) +
   geom_point(
-    shape = 19
-    ) +
+    shape = 19, size = 2
+  ) +
   geom_smooth(method = "lm", se = FALSE) +
-  scale_color_mccall_lab(palette = "martink12") +
+  scale_color_mnmlab(palette = "highContrast") +
   labs(
-    title = "Penguin bill dimensions",
-    subtitle = "Bill length and depth for Adelie, Chinstrap, 
-                and Gentoo Penguins at Palmer Station LTER",
-    x = "Bill length (mm)",
-    y = "Bill depth (mm)",
-    color = "Species"
-  ) + 
-  theme_mccall_lab()
+    title = "Penguin bill dimensions at Palmer Station",
+    x = "Bill length (mm)", y = "Bill depth (mm)", color = "Species"
+  ) +
+  theme_mnmlab()
 ```
 
 ![](man/figures/penguins.png)<!-- -->

@@ -64,6 +64,8 @@ theme_mnmlab <- function(
       color = "black",
       linetype = "18",
       size = 4
-    )
+    ),
+    strip.background = element_rect(fill = "#BBBBBB"),
+    strip.text = element_text(color = "black")
   )
 }
