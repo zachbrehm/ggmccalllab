@@ -69,7 +69,7 @@ palette from Paul Tol:
 ``` r
 ggplot(
   penguins,
-  aes(x = bill_length_mm, y = bill_depth_mm, fill = species, group = species)
+  aes(x = bill_length_mm, y = bill_depth_mm, color = species, group = species)
 ) +
   geom_point(
     shape = 19, size = 2
